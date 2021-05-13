@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Minimax.Main">
+  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="920" height="644"/>
+    </constraints>
+    <properties>
+      <background color="-65536"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="c14e5" class="javax.swing.JLabel" binding="headerLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="48"/>
+          <foreground color="-1"/>
+          <text value="CUBES GAME"/>
+        </properties>
+      </component>
+      <grid id="bf98c" binding="panel2" layout-manager="GridLayoutManager" row-count="15" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-65536"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <vspacer id="e2651">
+            <constraints>
+              <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <grid id="4bca9" binding="infoPanel" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="0" row-span="7" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-65536"/>
+              <visible value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="f91c9" class="javax.swing.JLabel" binding="info1">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="Αυτο το παιχνίδι φτιάχτηκε για την 4η Εργασία της Ενότητας ΠΛΗ31 για το ΕΑΠ."/>
+                </properties>
+              </component>
+              <component id="422e8" class="javax.swing.JLabel" binding="info2">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="Πάνω στο Τράπεζι υπάρχουν αρχικά Μ Κύβοι."/>
+                </properties>
+              </component>
+              <component id="68d78" class="javax.swing.JLabel" binding="info3">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="Κάθε παίχτης μπορεί να αφαιρεί είτε 1 είτε 2 είτε Κ Ιδιους Κύβους"/>
+                </properties>
+              </component>
+              <component id="7c0bf" class="javax.swing.JLabel" binding="info4">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="Οι Μεταβλητές Μ και Κ ορίζονται στην αρχή του παιχνιδιού"/>
+                </properties>
+              </component>
+              <component id="64c70" class="javax.swing.JLabel" binding="info5">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="Νικητής είναι ο Παίχτης που θα σηκώσει τον τελευταίο Κύβο απο το Τραπέζι"/>
+                </properties>
+              </component>
+              <component id="db345" class="javax.swing.JLabel" binding="info6">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="Προγραμματιστής : ΨΑΛΤΑΚΗΣ ΝΙΚΟΛΑΟΣ ΑΜ : 80926"/>
+                </properties>
+              </component>
+              <component id="b6e66" class="javax.swing.JLabel" binding="info7">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="(C) 2021"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="c23c6" binding="buttonPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-65536"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="162e6" class="javax.swing.JButton" binding="settingsBTN">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <icon value="img/settings.jpg"/>
+                  <text value="ΡΥΘΜΗΣΕΙΣ"/>
+                </properties>
+              </component>
+              <component id="9b502" class="javax.swing.JButton" binding="playBTN">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <icon value="img/play-button.jpg"/>
+                  <text value="ΕΚΚΙΝΗΣΗ ΠΑΙΧΝΙΔΙΟΥ"/>
+                </properties>
+              </component>
+              <component id="39d2c" class="javax.swing.JButton" binding="takeCubesBTN">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <icon value="img/play-button.jpg"/>
+                  <text value="ΠΑΡΕ ΚΥΒΟΥΣ"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="21108" binding="settingsPanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="9" column="0" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-65536"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="8e9d" class="javax.swing.JLabel" binding="settingsM">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="Αριθμός Κύβων στο Τραπέζι"/>
+                </properties>
+              </component>
+              <component id="79d81" class="javax.swing.JLabel" binding="settingsK">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="Πόσους μπορούμε να Σηκώσουμε"/>
+                </properties>
+              </component>
+              <component id="d764d" class="javax.swing.JTextField" binding="mTextField">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="2" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <horizontalAlignment value="0"/>
+                </properties>
+              </component>
+              <component id="5e320" class="javax.swing.JTextField" binding="Ktextfield">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <horizontalAlignment value="0"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="8f160" binding="playPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="11" column="0" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-65536"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="8babe" class="javax.swing.JLabel" binding="chooseCubesLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="ΕΠΙΛΟΓΗ ΚΥΒΩΝ"/>
+                </properties>
+              </component>
+              <component id="32e66" class="javax.swing.JTextField" binding="numberTextfield">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="300" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <horizontalAlignment value="0"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="b27d2" binding="CubesNumPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-8355712"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a9001" class="javax.swing.JLabel" binding="mLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="72"/>
+                  <foreground color="-1"/>
+                  <text value="ΚΥΒΟΙ"/>
+                </properties>
+              </component>
+              <component id="922f9" class="javax.swing.JLabel" binding="kLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="20"/>
+                  <foreground color="-1"/>
+                  <text value="ΜΠΟΡΕΙΣ ΝΑ ΠΑΡΕΙΣ 1 Η 2 Η Κ "/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
